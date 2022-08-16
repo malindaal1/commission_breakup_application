@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commision_Breackup", "Commision_Breackup\Commision_Breackup.csproj", "{DF12398A-3137-4069-AF0D-21DFFA362E16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF12398A-3137-4069-AF0D-21DFFA362E16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF12398A-3137-4069-AF0D-21DFFA362E16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF12398A-3137-4069-AF0D-21DFFA362E16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF12398A-3137-4069-AF0D-21DFFA362E16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23476DF9-E35A-45C3-B781-2E5E3F8C49AF}
+	EndGlobalSection
+EndGlobal
