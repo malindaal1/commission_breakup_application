@@ -40,7 +40,7 @@ namespace Commision_Breackup
 
                 else
                 {
-                    Response.Redirect("Main.Master");
+                    Response.Redirect("WebForm1.aspx");
                 }
             }
             else

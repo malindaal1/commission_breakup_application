@@ -9,7 +9,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <%--datatables css--%>
     <link href="Datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
-     <%--fontawesome css--%>
+    <%--fontawesome css--%>
     <link href="Fontawesome/css/all.css" rel="stylesheet" />
 
     <%--our custom css--%>
@@ -21,34 +21,63 @@
     <script src="js/popper.min.js"></script>
     <%--bootstrap js--%>
     <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style_common.css" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css" />
+
+    <!-- Style -->
+
+    <link href="assets/css/fresh-bootstrap-table.css" rel="stylesheet" />
+
+    <!-- Fonts and icons -->
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,300" rel="stylesheet" type="text/css">
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-        
+
+        <div>
+            <img src="img/supertech1.jpg" width="30" height="30" style="margin-left: 600px; margin-top: 7px;" />
+        </div>
+        <div class="jumbotron" style="background: none; margin-bottom: -85px;">
+            <div class="container" style="margin-bottom: 0px;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p style="font-size: 16px; text-align: center; margin: -60px;">
+                            <script type="text/javascript">
+                                now = new Date
+                                if (now.getHours() < 12) { document.write("Good Morning, and Welcome To Commission Breakup Application") }
+                                else if (now.getHours() < 16) { document.write("Good Afternoon, and Welcome To  Commission Breakup Application") }
+                                else if (now.getHours() < 24) { document.write("Good Evening, and Welcome To  Commission Breakup Application") }
+                            </script>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div>
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-                <a class="navbar-brand" href="#">
-                    <img src="imgs/books.png" width="30" height="30" />
+                <%-- <a class="navbar-brand" href="#">
+                   <img src="img/supertech1.jpg" width="30" height="30" />
                     CBU APPLICATION
-                </a>
+                </a>--%>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto" style="margin: auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="homepage.aspx">Home</a>
+                            <a class="nav-link" href="WebForm1.aspx">Home</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Schedule Clubbing</a>
+                            <a class="nav-link" href="WebForm2.aspx">Schedule Clubbing</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Carton Breakup Update</a>
+                            <a class="nav-link" href="WebForm3.aspx">Carton Breakup Update</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Cut Plan</a>
@@ -56,33 +85,11 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Report</a>
                         </li>
-                        
-
-                    </ul>
-
-                    <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton4" runat="server">View Item</asp:LinkButton>
+                            <a class="nav-link" href="Login.aspx">Logout</a>
                         </li>
-                        
-                        <%--<li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton1" runat="server">User Login</asp:LinkButton>
-                        </li>--%>
-                        <%--<li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton2" runat="server">Sign Up</asp:LinkButton>
-                        </li>--%>
-                        <li class="nav-item active" style="margin-left:360px">
-                            <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server">Logout</asp:LinkButton>
-                        </li>
-
-                        <%--<li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="LinkButton7" runat="server">Hello user</asp:LinkButton>
-
-                        </li>--%>
                     </ul>
                 </div>
-
-
             </nav>
         </div>
 
@@ -94,41 +101,89 @@
         </div>
         <!-- Main Content Placeholder -->
 
-         <!-- Footer -->
+        <!-- Footer -->
         <footer>
-            <div id="footer1" class="container-fluid">
+            <div id="footer2" class="container-fluid" style="padding-top: 10px">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                        <p>
-                            <asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server">Admin Login</asp:LinkButton>
-                            &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server">Author Management</asp:LinkButton>
-                            &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton12" runat="server">Publisher Management</asp:LinkButton>
-                            &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton8" runat="server">Book Inventory</asp:LinkButton>
-                            &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton9" runat="server">Book Issuing</asp:LinkButton>
-                            &nbsp;
-                             <asp:LinkButton class="footerlinks" ID="LinkButton10" runat="server">Member Management</asp:LinkButton>
-                        </p>
-
-                    </div>
-
-                </div>
-            </div>
-            <div id="footer2" class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                        <p style="color:whitesmoke">&copy All right Reversed. <a class="footerlinks" href="#" target="_blank">Simple Snippets</a></p>
+                        <p style="color: whitesmoke">&copy All right Reversed. <a class="footerlinks" href="#" target="_blank">Commission Breakup Application</a></p>
                     </div>
                 </div>
             </div>
 
         </footer>
         <!-- ./Footer -->
-
     </form>
 </body>
+<!-- Javascript -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table/dist/bootstrap-table.min.js"></script>
+<script type="text/javascript">
+    var $table = $('#fresh-table')
+    var $alertBtn = $('#alertBtn')
+
+    window.operateEvents = {
+        'click .like': function (e, value, row, index) {
+            alert('You click like icon, row: ' + JSON.stringify(row))
+            console.log(value, row, index)
+        },
+        'click .edit': function (e, value, row, index) {
+            alert('You click edit icon, row: ' + JSON.stringify(row))
+            console.log(value, row, index)
+        },
+        'click .remove': function (e, value, row, index) {
+            $table.bootstrapTable('remove', {
+                field: 'id',
+                values: [row.id]
+            })
+        }
+    }
+
+    function operateFormatter(value, row, index) {
+        return [
+            '<a rel="tooltip" title="Like" class="table-action like" href="javascript:void(0)" title="Like">',
+            '<i class="fa fa-heart"></i>',
+            '</a>',
+            '<a rel="tooltip" title="Edit" class="table-action edit" href="javascript:void(0)" title="Edit">',
+            '<i class="fa fa-edit"></i>',
+            '</a>',
+            '<a rel="tooltip" title="Remove" class="table-action remove" href="javascript:void(0)" title="Remove">',
+            '<i class="fa fa-remove"></i>',
+            '</a>'
+        ].join('')
+    }
+
+    $(function () {
+        $table.bootstrapTable({
+            classes: 'table table-hover table-striped',
+            toolbar: '.toolbar',
+
+            search: true,
+            showRefresh: true,
+            showToggle: true,
+            showColumns: true,
+            pagination: true,
+            striped: true,
+            sortable: true,
+            pageSize: 8,
+            pageList: [8, 10, 25, 50, 100],
+
+            formatShowingRows: function (pageFrom, pageTo, totalRows) {
+                return ''
+            },
+            formatRecordsPerPage: function (pageNumber) {
+                return pageNumber + ' rows visible'
+            }
+        })
+
+        $alertBtn.click(function () {
+            alert('You pressed on Alert')
+        })
+    })
+
+</script>
+
 
 </html>
