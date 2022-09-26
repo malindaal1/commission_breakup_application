@@ -67,6 +67,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\demo.css" />
+    <Content Include="assets\css\fresh-bootstrap-table.css" />
+    <Content Include="assets\img\bg.jpg" />
+    <Content Include="assets\img\compact.jpg" />
+    <Content Include="assets\img\favicon.ico" />
+    <Content Include="assets\img\full.jpg" />
+    <Content Include="assets\img\mask.png" />
+    <Content Include="assets\img\new_logo.png" />
+    <Content Include="assets\js\demo\demo.js" />
+    <Content Include="assets\js\demo\gsdk-switch.js" />
+    <Content Include="assets\js\demo\jquery.sharrre.js" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\CustomStyleSheet.css" />
     <Content Include="css\demo.css" />
@@ -2142,6 +2153,7 @@
     <Content Include="img\8.jpg" />
     <Content Include="img\9.jpg" />
     <Content Include="img\supertech.jpg" />
+    <Content Include="img\supertech1.jpg" />
     <Content Include="img\undraw_posting_photo.svg" />
     <Content Include="img\undraw_profile.svg" />
     <Content Include="img\undraw_profile_1.svg" />
@@ -3830,6 +3842,8 @@
     <Content Include="vendor\jquery\jquery.slim.min.js" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.Master.cs">
@@ -3854,6 +3868,20 @@
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -3909,6 +3937,31 @@
     <Content Include="Fontawesome\webfonts\fa-solid-900.woff2" />
     <Content Include="Fontawesome\webfonts\fa-v4compatibility.ttf" />
     <Content Include="Fontawesome\webfonts\fa-v4compatibility.woff2" />
+    <Content Include="assets\css\fresh-bootstrap-table.css.map" />
+    <Content Include="assets\sass\fbt\mixins\_buttons.scss" />
+    <Content Include="assets\sass\fbt\mixins\_cards.scss" />
+    <Content Include="assets\sass\fbt\mixins\_icons.scss" />
+    <Content Include="assets\sass\fbt\mixins\_inputs.scss" />
+    <Content Include="assets\sass\fbt\mixins\_labels.scss" />
+    <Content Include="assets\sass\fbt\mixins\_morphing-buttons.scss" />
+    <Content Include="assets\sass\fbt\mixins\_navbars.scss" />
+    <Content Include="assets\sass\fbt\mixins\_social-buttons.scss" />
+    <Content Include="assets\sass\fbt\mixins\_tabs.scss" />
+    <Content Include="assets\sass\fbt\mixins\_transparency.scss" />
+    <Content Include="assets\sass\fbt\mixins\_vendor-prefixes.scss" />
+    <Content Include="assets\sass\fbt\_bootstrap-table-base.scss" />
+    <Content Include="assets\sass\fbt\_buttons.scss" />
+    <Content Include="assets\sass\fbt\_dropdown.scss" />
+    <Content Include="assets\sass\fbt\_fresh-bootstrap-table.scss" />
+    <Content Include="assets\sass\fbt\_inputs.scss" />
+    <Content Include="assets\sass\fbt\_misc.scss" />
+    <Content Include="assets\sass\fbt\_mixins.scss" />
+    <Content Include="assets\sass\fbt\_typography.scss" />
+    <Content Include="assets\sass\fbt\_variables.scss" />
+    <Content Include="assets\sass\fresh-bootstrap-table.scss" />
+    <Content Include="Files\Sample.xlsx" />
+    <Content Include="Files\carton_break_up.xlsx" />
+    <Content Include="Files\test1.xlsx" />
     <None Include="packages.config" />
     <Content Include="vendor\bootstrap\js\bootstrap.bundle.js.map" />
     <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
